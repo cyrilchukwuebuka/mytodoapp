@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c95a428ff.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Todos</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <hi class="mb-4">Todo List</hi>
+            <form class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="search todos">
+            </form>
+        </header>
+
+        <!-- todos, add and delete class are our class -->
+        <ul class="list-group todos mx-auto">
+            <li class="list-group-item text-light d-flex justify-content-between align-items-center">
+                <span>Read School Book</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item text-light d-flex justify-content-between align-items-center">
+                <span>Relax My Mind</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="list-group-item text-light d-flex justify-content-between align-items-center">
+                <span>Touch Some Codes...*smile*</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        </ul>
+        <form class="add text-center text-light my-4">
+            <label class="add text-center">Add a new todo...</label>
+            <input type="text" name=add class="form-control m-auto"/>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
